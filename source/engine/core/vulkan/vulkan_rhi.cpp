@@ -117,7 +117,7 @@ namespace Bamboo
 	}
 
 	void VulkanRHI::createSurface()
-	{
+	{	
 		GLFWwindow* window = g_engine.windowSystem()->getWindow();
 		VkResult result = glfwCreateWindowSurface(m_instance, window, nullptr, &m_surface);
 		CHECK_VULKAN_RESULT(result, "create window surface");

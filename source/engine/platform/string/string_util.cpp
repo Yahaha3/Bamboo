@@ -1,7 +1,9 @@
 #include "string_util.h"
+#include <cctype>
+#include <algorithm>
 
 namespace Bamboo
-{
+{	
 	std::vector<std::string> StringUtil::split(const std::string& s, const std::string& delimiter)
 	{
 		std::vector<std::string> output;

@@ -221,7 +221,8 @@ void ObjectStreamTextOut::WriteChar(char inChar)
 
 void ObjectStreamTextOut::WriteWord(const string_view &inWord)
 {
-	mStream << inWord;
+	mStream.write(inWord.data(), inWord.size());
+	//mStream << inWord;
 }
 
 JPH_NAMESPACE_END

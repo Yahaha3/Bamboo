@@ -476,7 +476,8 @@ bool ContactConstraintManager::ManifoldCache::RestoreState(const ManifoldCache &
 	bool success = true;
 
 	// Create a contact allocator for restoring the contact cache
-	ContactAllocator contact_allocator(GetContactAllocator());
+	//ContactAllocator contact_allocator(GetContactAllocator());
+	ContactAllocator contact_allocator = GetContactAllocator();
 
 	// When validating, get all existing body pairs
 	Array<const BPKeyValue *> all_bp;
